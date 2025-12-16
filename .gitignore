@@ -1,0 +1,39 @@
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
+
+# Yarn (Berry)
+# Ignore everything under .yarn by default, but keep the bits that are meant to be committed
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Always ignore the install state (machine-generated)
+.yarn/install-state.gz
+
+# If you ever switch to Plug'n'Play, keep these ignored
+.pnp.*
