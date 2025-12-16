@@ -32,7 +32,51 @@
           @click="toggleAurora"
         >
           <span class="sr-only">Toggle background animation</span>
-          <span aria-hidden="true">{{ auroraEnabled ? 'Anim: on' : 'Anim: off' }}</span>
+          <span aria-hidden="true" class="inline-flex items-center">
+            <svg
+              v-if="auroraEnabled"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+            >
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M6.34 17.66l-1.41 1.41" />
+              <path d="M19.07 4.93l-1.41 1.41" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+            <svg
+              v-else
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+            >
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M6.34 17.66l-1.41 1.41" />
+              <path d="M19.07 4.93l-1.41 1.41" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M4 20L20 4" />
+            </svg>
+          </span>
         </button>
 
         <div class="shrink-0 leading-none opacity-70">
