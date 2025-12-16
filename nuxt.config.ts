@@ -18,7 +18,7 @@ export default defineNuxtConfig({
         {
           name: 'description',
           content:
-            'QR codes, short links, and email forwarding—built for individuals and small businesses who want utility without recurring costs.',
+            'QR codes, short links, and email-to-files—built for individuals and small businesses who want utility without recurring costs.',
         },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],

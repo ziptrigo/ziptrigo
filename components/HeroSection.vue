@@ -21,8 +21,8 @@
         </h1>
 
         <p ref="subtitleEl" class="mt-5 max-w-xl text-pretty text-base opacity-85 sm:text-lg">
-          QR codes, short links, and email forwarding—built for individuals and small businesses who want utility
-          without recurring costs.
+          QR codes, short links with Shortly, and email-to-files with Mailio—built for individuals and small
+          businesses who want utility without recurring costs.
         </p>
 
         <p class="mt-4 max-w-xl text-pretty text-sm opacity-85 sm:text-base">
@@ -67,12 +67,12 @@
               <div class="mt-2 text-sm opacity-90">Generate reliable codes for print and web.</div>
             </div>
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">Short URLs</div>
-              <div class="mt-2 text-sm opacity-90">Create clean links for sharing and campaigns.</div>
+              <div class="text-xs font-semibold opacity-80">Shortly</div>
+              <div class="mt-2 text-sm opacity-90">Short links for sharing, campaigns, and internal use.</div>
             </div>
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">Email forwarding</div>
-              <div class="mt-2 text-sm opacity-90">Use custom addresses without email hosting.</div>
+              <div class="text-xs font-semibold opacity-80">Mailio</div>
+              <div class="mt-2 text-sm opacity-90">Save email bodies and attachments as separate files.</div>
             </div>
           </div>
         </div>

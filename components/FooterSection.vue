@@ -9,7 +9,7 @@
         />
         <div>
           <div class="text-sm font-semibold">ZipTrigo</div>
-          <div class="text-xs opacity-75">QR Codes · Short URLs · Email Forwarding</div>
+          <div class="text-xs opacity-75">QR Codes · Shortly · Mailio</div>
         </div>
       </div>
 
