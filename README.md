@@ -46,6 +46,30 @@ docker run --rm -p 8005:8005 ziptrigo-landing
 
 Open `http://localhost:8005`.
 
+## Background animation (Aurora)
+
+This landing page includes a subtle animated aurora background.
+
+- Wrapper component: `components/ui/AuroraBackground.vue`
+- Toggle button: in the footer (left of the copyright)
+- Persistence: stored in `localStorage` under `ziptrigo:aurora-enabled` (`'1'` enabled, `'0'` disabled)
+
+### Tuning the effect
+
+1. Animation speed
+- `tailwind.config.js`: `theme.extend.animation.aurora` (default: `60s`)
+
+2. Intensity
+- `components/ui/AuroraBackground.vue`:
+  - `opacity-30` (lower = more subtle)
+  - `blur-[14px]` (higher = softer)
+  - `saturate-125` (lower = less vivid)
+  - `after:mix-blend-multiply` (blend mode affects contrast)
+
+3. Palette
+The aurora uses ZipTrigo greens via CSS variables like `var(--ziptrigo-sage)`.
+These are generated from Tailwind colors in `tailwind.config.js`.
+
 ## Notes
 
 - The logo is served from `public/ziptrigo_logo.png`.

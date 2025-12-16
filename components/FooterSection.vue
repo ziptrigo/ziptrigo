@@ -1,6 +1,8 @@
 <template>
   <footer class="border-t border-ziptrigo-ink/10">
-    <div class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between">
+    <div
+      class="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 sm:flex-row sm:items-center sm:justify-between"
+    >
       <div class="flex items-center gap-3">
         <img
           src="/ziptrigo_logo.png"
@@ -21,7 +23,70 @@
         <a class="hover:opacity-100" href="#cta">Start</a>
       </div>
 
-      <div class="text-xs opacity-70">© {{ new Date().getFullYear() }} ZipTrigo</div>
+      <div class="flex flex-nowrap items-center justify-end gap-3 whitespace-nowrap text-xs">
+        <button
+          type="button"
+          class="inline-flex shrink-0 items-center rounded-md border border-ziptrigo-ink/15 bg-ziptrigo-mist/40 px-2 py-1 leading-none text-ziptrigo-ink/80 shadow-sm transition hover:bg-ziptrigo-mist/60 hover:text-ziptrigo-ink focus:outline-none focus:ring-2 focus:ring-ziptrigo-forest/30"
+          :aria-pressed="auroraEnabled"
+          :title="auroraEnabled ? 'Disable background animation' : 'Enable background animation'"
+          @click="toggleAurora"
+        >
+          <span class="sr-only">Toggle background animation</span>
+          <span aria-hidden="true" class="inline-flex items-center">
+            <svg
+              v-if="auroraEnabled"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+            >
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M6.34 17.66l-1.41 1.41" />
+              <path d="M19.07 4.93l-1.41 1.41" />
+              <circle cx="12" cy="12" r="4" />
+            </svg>
+            <svg
+              v-else
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-4 w-4"
+            >
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M6.34 17.66l-1.41 1.41" />
+              <path d="M19.07 4.93l-1.41 1.41" />
+              <circle cx="12" cy="12" r="4" />
+              <path d="M4 20L20 4" />
+            </svg>
+          </span>
+        </button>
+
+        <div class="shrink-0 leading-none opacity-70">
+          © {{ new Date().getFullYear() }} ZipTrigo
+        </div>
+      </div>
     </div>
   </footer>
 </template>
+
+<script setup lang="ts">
+const { auroraEnabled, toggleAurora } = useAuroraPreference()
+</script>

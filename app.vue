@@ -1,5 +1,5 @@
 <template>
-  <AuroraBackground>
+  <AuroraBackground :enabled="auroraEnabled">
     <NavBar />
     <NuxtPage />
   </AuroraBackground>
@@ -7,4 +7,6 @@
 
 <script setup lang="ts">
 import AuroraBackground from '~/components/ui/AuroraBackground.vue'
+
+const { auroraEnabled } = useAuroraPreference()
 </script>

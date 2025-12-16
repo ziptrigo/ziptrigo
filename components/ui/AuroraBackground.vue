@@ -1,7 +1,19 @@
 <template>
   <div :class="wrapperClass" v-bind="attrs">
-    <div class="absolute inset-0 overflow-hidden">
+    <div v-if="enabled" class="absolute inset-0 overflow-hidden">
       <div :class="auroraClass" />
+    </div>
+
+    <div v-else class="pointer-events-none absolute inset-0 overflow-hidden">
+      <div
+        class="absolute -left-24 -top-24 h-96 w-96 rounded-full bg-ziptrigo-mist/70 blur-3xl"
+      />
+      <div
+        class="absolute right-[-6rem] top-24 h-[28rem] w-[28rem] rounded-full bg-ziptrigo-forest/20 blur-3xl"
+      />
+      <div
+        class="absolute bottom-[-10rem] left-1/3 h-[30rem] w-[30rem] rounded-full bg-ziptrigo-moss/25 blur-3xl"
+      />
     </div>
 
     <div class="relative z-10">
@@ -14,12 +26,16 @@
 import { computed, useAttrs } from 'vue'
 
 type Props = {
+  enabled?: boolean
   showRadialGradient?: boolean
 }
 
 const props = withDefaults(defineProps<Props>(), {
+  enabled: true,
   showRadialGradient: true,
 })
+
+const enabled = computed(() => props.enabled)
 
 const attrs = useAttrs()
 
