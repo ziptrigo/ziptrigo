@@ -2,16 +2,28 @@
   <main>
     <HeroSection />
 
-    <section id="features" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <FeaturesGrid />
+    <section id="value" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <ProblemSection />
     </section>
 
-    <section id="webgl" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <WebGlShowcase />
+    <section id="credits" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <CreditsModelSection />
     </section>
 
-    <section id="testimonial" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
-      <TestimonialSection />
+    <section id="tools" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <ToolsOverviewSection />
+    </section>
+
+    <section id="who" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <AudienceSection />
+    </section>
+
+    <section id="pricing" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <PricingPhilosophySection />
+    </section>
+
+    <section id="trust" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
+      <TrustSection />
     </section>
 
     <section id="cta" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">

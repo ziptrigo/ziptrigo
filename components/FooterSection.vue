@@ -9,14 +9,15 @@
         />
         <div>
           <div class="text-sm font-semibold">ZipTrigo</div>
-          <div class="text-xs opacity-75">CRM · Invoicing · Project Management</div>
+          <div class="text-xs opacity-75">QR Codes · Short URLs · Email Forwarding</div>
         </div>
       </div>
 
       <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-sm opacity-80">
-        <a class="hover:opacity-100" href="#features">Features</a>
-        <a class="hover:opacity-100" href="#webgl">Demo</a>
-        <a class="hover:opacity-100" href="#testimonial">Customers</a>
+        <a class="hover:opacity-100" href="#tools">Tools</a>
+        <a class="hover:opacity-100" href="#credits">Credits</a>
+        <a class="hover:opacity-100" href="#who">Who it’s for</a>
+        <a class="hover:opacity-100" href="#pricing">Pricing</a>
         <a class="hover:opacity-100" href="#cta">Start</a>
       </div>
 

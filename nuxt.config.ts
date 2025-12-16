@@ -13,14 +13,16 @@ export default defineNuxtConfig({
 
   app: {
     head: {
-      title: 'ZipTrigo — The All-in-One OS for Your Small Business',
+      title: 'ZipTrigo — Simple tools. Fair pricing. No subscriptions.',
       meta: [
-        { name: 'description', content: 'CRM, invoicing, and project management built for growth.' },
+        {
+          name: 'description',
+          content:
+            'QR codes, short links, and email forwarding—built for individuals and small businesses who want utility without recurring costs.',
+        },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       ],
-      link: [
-        { rel: 'icon', type: 'image/png', href: '/ziptrigo_logo.png' },
-      ],
+      link: [{ rel: 'icon', type: 'image/png', href: '/ziptrigo_logo.png' }],
     },
   },
 })

@@ -2,25 +2,32 @@
   <section class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
     <div class="grid items-center gap-10 lg:grid-cols-2">
       <div>
-        <div class="mb-6 inline-flex items-center gap-3 rounded-full border border-ziptrigo-ink/10 bg-ziptrigo-mist/40 px-4 py-2">
+        <div
+          class="mb-6 inline-flex items-center gap-3 rounded-full border border-ziptrigo-ink/10 bg-ziptrigo-mist/40 px-4 py-2"
+        >
           <img
             src="/ziptrigo_logo.png"
             alt="ZipTrigo"
             class="h-7 w-auto"
           />
-          <span class="text-xs font-semibold tracking-wide opacity-90">All-in-one business suite</span>
+          <span class="text-xs font-semibold tracking-wide opacity-90">Pay-as-you-go online tools</span>
         </div>
 
         <h1
           ref="titleEl"
           class="text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
         >
-          ZipTrigo: The All-in-One OS for Your Small Business.
+          Simple tools. Fair pricing. No subscriptions.
         </h1>
 
         <p ref="subtitleEl" class="mt-5 max-w-xl text-pretty text-base opacity-85 sm:text-lg">
-          Stop juggling apps. Centralize your client management, billing, and projects.
-          <span class="font-semibold">Built for growth, priced for startups.</span>
+          QR codes, short links, and email forwarding—built for individuals and small businesses who want utility
+          without recurring costs.
+        </p>
+
+        <p class="mt-4 max-w-xl text-pretty text-sm opacity-85 sm:text-base">
+          ZipTrigo gives you essential online tools on a pay-as-you-go basis. Buy credits once, use them across all
+          tools, and only pay for what you actually consume.
         </p>
 
         <div ref="ctaEl" class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
@@ -28,25 +35,21 @@
             href="#cta"
             class="inline-flex items-center justify-center rounded-full bg-ziptrigo-ink px-6 py-3 text-sm font-semibold text-ziptrigo-mist shadow-soft transition hover:bg-ziptrigo-forest"
           >
-            Start Your Free 14-Day Trial
+            Get Started with Credits
           </a>
           <a
-            href="#features"
+            href="#tools"
             class="inline-flex items-center justify-center rounded-full border border-ziptrigo-ink/20 bg-transparent px-6 py-3 text-sm font-semibold transition hover:bg-ziptrigo-mist/30"
           >
-            See features
+            View Tools
           </a>
         </div>
-
-        <p class="mt-4 text-xs opacity-70">No credit card needed.</p>
       </div>
 
       <div class="relative">
-        <div
-          class="rounded-3xl border border-ziptrigo-ink/10 bg-ziptrigo-mist/40 p-6 shadow-soft"
-        >
+        <div class="rounded-3xl border border-ziptrigo-ink/10 bg-ziptrigo-mist/40 p-6 shadow-soft">
           <div class="flex items-center justify-between">
-            <div class="text-sm font-semibold">ZipTrigo Dashboard (preview)</div>
+            <div class="text-sm font-semibold">ZipTrigo (preview)</div>
             <div class="flex gap-2">
               <span class="h-2.5 w-2.5 rounded-full bg-ziptrigo-stone" />
               <span class="h-2.5 w-2.5 rounded-full bg-ziptrigo-moss" />
@@ -56,20 +59,20 @@
 
           <div class="mt-6 grid gap-4 sm:grid-cols-2">
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">CRM</div>
-              <div class="mt-2 text-sm opacity-90">Leads, timelines, and follow-ups in one place.</div>
+              <div class="text-xs font-semibold opacity-80">Credit balance</div>
+              <div class="mt-2 text-sm opacity-90">One balance you can use across every tool.</div>
             </div>
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">Invoicing</div>
-              <div class="mt-2 text-sm opacity-90">Send recurring invoices and get paid faster.</div>
+              <div class="text-xs font-semibold opacity-80">QR Codes</div>
+              <div class="mt-2 text-sm opacity-90">Generate reliable codes for print and web.</div>
             </div>
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">Projects</div>
-              <div class="mt-2 text-sm opacity-90">Visualize tasks, manage workload, hit deadlines.</div>
+              <div class="text-xs font-semibold opacity-80">Short URLs</div>
+              <div class="mt-2 text-sm opacity-90">Create clean links for sharing and campaigns.</div>
             </div>
             <div class="rounded-2xl bg-white/40 p-4">
-              <div class="text-xs font-semibold opacity-80">Automation</div>
-              <div class="mt-2 text-sm opacity-90">Less admin. More building.</div>
+              <div class="text-xs font-semibold opacity-80">Email forwarding</div>
+              <div class="mt-2 text-sm opacity-90">Use custom addresses without email hosting.</div>
             </div>
           </div>
         </div>

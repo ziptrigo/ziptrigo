@@ -1,6 +1,6 @@
-# ZipTrigo Landing (Nuxt 4 + Tailwind + GSAP + Three.js)
+# ZipTrigo Landing (Nuxt 4 + Tailwind + GSAP)
 
-Single-page marketing landing page for ZipTrigo (CRM, invoicing, and project management).
+Single-page marketing landing page for ZipTrigo (QR codes, short links, and email forwarding).
 
 ## Requirements
 
@@ -50,4 +50,3 @@ Open `http://localhost:8005`.
 
 - The logo is served from `public/ziptrigo_logo.png`.
 - Animations are implemented with GSAP and run client-side only.
-- The WebGL section uses Three.js as a lightweight placeholder scene.

@@ -11,17 +11,17 @@
       </a>
 
       <nav class="hidden items-center gap-6 text-sm sm:flex">
-        <a class="opacity-80 hover:opacity-100" href="#features">Features</a>
-        <a class="opacity-80 hover:opacity-100" href="#webgl">Demo</a>
-        <a class="opacity-80 hover:opacity-100" href="#testimonial">Customers</a>
-        <a class="opacity-80 hover:opacity-100" href="#cta">Start</a>
+        <a class="opacity-80 hover:opacity-100" href="#tools">Tools</a>
+        <a class="opacity-80 hover:opacity-100" href="#credits">How credits work</a>
+        <a class="opacity-80 hover:opacity-100" href="#who">Who it’s for</a>
+        <a class="opacity-80 hover:opacity-100" href="#pricing">Pricing</a>
       </nav>
 
       <a
         href="#cta"
         class="inline-flex items-center rounded-full bg-ziptrigo-ink px-4 py-2 text-sm font-semibold text-ziptrigo-mist shadow-soft transition hover:bg-ziptrigo-forest"
       >
-        Start free trial
+        Get started with credits
       </a>
     </div>
   </header>
