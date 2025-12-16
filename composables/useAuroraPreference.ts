@@ -10,15 +10,10 @@ export function useAuroraPreference() {
 
     if (stored === '0') {
       auroraEnabled.value = false
-      return
-    }
-
-    if (stored === '1') {
+    } else if (stored === '1') {
       auroraEnabled.value = true
     }
-  })
 
-  if (process.client) {
     watch(
       auroraEnabled,
       (value) => {
@@ -28,7 +23,7 @@ export function useAuroraPreference() {
         flush: 'post',
       },
     )
-  }
+  })
 
   const toggleAurora = () => {
     auroraEnabled.value = !auroraEnabled.value
