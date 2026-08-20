@@ -6,21 +6,22 @@
           class="mb-6 inline-flex items-center gap-3 rounded-full border border-ziptrigo-ink/10 bg-ziptrigo-mist/40 px-4 py-2"
         >
           <img
-            src="/ziptrigo_logo.png"
+            src="/ziptrigo_logo.webp"
             alt="ZipTrigo"
+            width="28"
+            height="28"
             class="h-7 w-auto"
           />
           <span class="text-xs font-semibold tracking-wide opacity-90">Pay-as-you-go online tools</span>
         </div>
 
         <h1
-          ref="titleEl"
-          class="text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
+          class="rise-in text-balance text-4xl font-semibold leading-tight tracking-tight sm:text-5xl"
         >
           Simple tools. Fair pricing. No subscriptions.
         </h1>
 
-        <p ref="subtitleEl" class="mt-5 max-w-xl text-pretty text-base opacity-85 sm:text-lg">
+        <p class="rise-in rise-in-delay-1 mt-5 max-w-xl text-pretty text-base opacity-85 sm:text-lg">
           QR codes, short links with Shortly, and email-to-files with Mailio—built for individuals and small
           businesses who want utility without recurring costs.
         </p>
@@ -30,7 +31,7 @@
           tools, and only pay for what you actually consume.
         </p>
 
-        <div ref="ctaEl" class="mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
+        <div class="rise-in rise-in-delay-2 mt-8 flex flex-col gap-3 sm:flex-row sm:items-center">
           <a
             href="#cta"
             class="inline-flex items-center justify-center rounded-full bg-ziptrigo-ink px-6 py-3 text-sm font-semibold text-ziptrigo-mist shadow-soft transition hover:bg-ziptrigo-forest"
@@ -84,35 +85,3 @@
     </div>
   </section>
 </template>
-
-<script setup lang="ts">
-import { onMounted, ref } from 'vue'
-
-const titleEl = ref<HTMLElement | null>(null)
-const subtitleEl = ref<HTMLElement | null>(null)
-const ctaEl = ref<HTMLElement | null>(null)
-
-const shouldReduceMotion = (): boolean => {
-  if (!import.meta.client) {
-    return true
-  }
-
-  return window.matchMedia('(prefers-reduced-motion: reduce)').matches
-}
-
-onMounted(async () => {
-  if (shouldReduceMotion()) {
-    return
-  }
-
-  const { gsap } = await import('gsap')
-
-  gsap.from([titleEl.value, subtitleEl.value, ctaEl.value].filter(Boolean), {
-    opacity: 0,
-    y: 16,
-    duration: 0.8,
-    ease: 'power2.out',
-    stagger: 0.08,
-  })
-})
-</script>

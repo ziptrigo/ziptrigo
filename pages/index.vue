@@ -1,5 +1,5 @@
 <template>
-  <main>
+  <main id="top">
     <HeroSection />
 
     <section id="value" class="mx-auto max-w-6xl px-6 py-16 sm:py-24">
