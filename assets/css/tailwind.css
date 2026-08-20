@@ -1,13 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-ziptrigo-ink: #1F2328;
+  --color-ziptrigo-sage: #A9B3A4;
+  --color-ziptrigo-mist: #C8CEC4;
+  --color-ziptrigo-stone: #8B9789;
+  --color-ziptrigo-moss: #6F826F;
+  --color-ziptrigo-forest: #4E6152;
+  --shadow-soft: 0 10px 30px rgba(31,35,40,0.15);
+  --animate-aurora: aurora 60s linear infinite;
+
+  @keyframes aurora {
+    from { background-position: 50% 50%, 50% 50%; }
+    to { background-position: 350% 50%, 350% 50%; }
+  }
+}
 
 @layer base {
-  html {
-    scroll-behavior: smooth;
-  }
-
   body {
     @apply bg-ziptrigo-sage text-ziptrigo-ink;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+}
+
+@layer components {
+  /*
+   * Entrance fade for the hero. Declared only inside `no-preference` so that
+   * the default state is fully visible: if the animation never applies (reduced
+   * motion, or CSS that fails to load) the content is never stuck at opacity 0.
+   */
+  @media (prefers-reduced-motion: no-preference) {
+    .rise-in {
+      opacity: 0;
+      animation: rise-in 0.8s cubic-bezier(0.22, 0.61, 0.36, 1) forwards;
+    }
+
+    .rise-in-delay-1 { animation-delay: 0.08s; }
+    .rise-in-delay-2 { animation-delay: 0.16s; }
+  }
+
+  @keyframes rise-in {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: none; }
   }
 }

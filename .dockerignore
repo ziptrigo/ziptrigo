@@ -1,5 +1,13 @@
-node_modules
+.git
+.gitignore
+.idea
 .nuxt
 .output
-.dist
+.data
+.nitro
+.cache
+dist
+node_modules
 *.log
+Dockerfile
+.dockerignore

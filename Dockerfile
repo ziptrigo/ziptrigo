@@ -19,4 +19,7 @@ COPY --from=build /app/.output/public /usr/share/nginx/html
 
 EXPOSE 8005
 
+HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
+  CMD wget --quiet --tries=1 --spider http://localhost:8005/healthz || exit 1
+
 CMD ["nginx", "-g", "daemon off;"]

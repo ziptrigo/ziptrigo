@@ -5,13 +5,15 @@
     >
       <div class="flex items-center gap-3">
         <img
-          src="/ziptrigo_logo.png"
+          src="/ziptrigo_logo.webp"
           alt="ZipTrigo"
+          width="36"
+          height="36"
           class="h-9 w-auto rounded-md bg-ziptrigo-mist/60 p-1"
         />
         <div>
           <div class="text-sm font-semibold">ZipTrigo</div>
-          <div class="text-xs opacity-75">QR Codes · Shortly · Mailio</div>
+          <div class="text-xs opacity-90">QR Codes · Shortly · Mailio</div>
         </div>
       </div>
 
@@ -79,7 +81,7 @@
           </span>
         </button>
 
-        <div class="shrink-0 leading-none opacity-70">
+        <div class="shrink-0 leading-none opacity-90">
           © {{ new Date().getFullYear() }} ZipTrigo
         </div>
       </div>
