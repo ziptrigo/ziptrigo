@@ -1,10 +1,13 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import tailwindcss from '@tailwindcss/vite'
+
 export default defineNuxtConfig({
   devtools: { enabled: false },
 
-  modules: ['@nuxtjs/tailwindcss'],
-
   css: ['~/assets/css/tailwind.css'],
+
+  vite: {
+    plugins: [tailwindcss()],
+  },
 
   // Static Site Generation (SSG)
   nitro: {

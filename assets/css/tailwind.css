@@ -1,6 +1,20 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@theme {
+  --color-ziptrigo-ink: #1F2328;
+  --color-ziptrigo-sage: #A9B3A4;
+  --color-ziptrigo-mist: #C8CEC4;
+  --color-ziptrigo-stone: #8B9789;
+  --color-ziptrigo-moss: #6F826F;
+  --color-ziptrigo-forest: #4E6152;
+  --shadow-soft: 0 10px 30px rgba(31,35,40,0.15);
+  --animate-aurora: aurora 60s linear infinite;
+
+  @keyframes aurora {
+    from { background-position: 50% 50%, 50% 50%; }
+    to { background-position: 350% 50%, 350% 50%; }
+  }
+}
 
 @layer base {
   html {
