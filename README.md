@@ -12,8 +12,8 @@ From the repo root:
 
 ```bash
 cd ziptrigo
-corepack yarn install
-corepack yarn dev
+npm install
+npm run dev
 ```
 
 Then open `http://localhost:3000`.
@@ -24,7 +24,7 @@ This project is configured for static output.
 
 ```bash
 cd ziptrigo
-corepack yarn generate
+npm run generate
 ```
 
 Static files will be generated under `.output/public`.

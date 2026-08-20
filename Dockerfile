@@ -3,17 +3,13 @@ FROM node:22-alpine AS build
 
 WORKDIR /app
 
-# Enable corepack to use the Yarn version pinned in package.json
-RUN corepack enable
+COPY package.json package-lock.json ./
 
-COPY package.json yarn.lock .yarnrc.yml ./
-COPY .yarn/ .yarn/
-
-RUN corepack yarn install --immutable
+RUN npm ci
 
 COPY . .
 
-RUN corepack yarn generate
+RUN npm run generate
 
 # Runtime stage (static)
 FROM nginx:1.27-alpine AS runtime
