@@ -2,9 +2,4 @@ node_modules
 .nuxt
 .output
 .dist
-.cache
-.yarn/cache
-.yarn/unplugged
-.yarn/build-state.yml
-.yarn/install-state.gz
 *.log
